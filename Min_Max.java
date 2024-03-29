@@ -2,24 +2,18 @@ import java.util.Scanner;
 
 public class Min_Max {
     public static int min(int arr[]){
-        int min=0;
-        for(int i=0;i< arr.length-1;i++){
-            min = i;
-            if(arr[min]>arr[i+1]){
-                min = arr[i+1];
-            }else {
+        int min=arr[0];
+        for(int i=1;i< arr.length;i++){
+            if(arr[i]<min){
                 min = arr[i];
             }
         }
         return min;
     }
     public static int max(int arr[]){
-        int max=0;
-        for(int i=0;i< arr.length-1;i++){
-            max = i;
-            if(arr[max]<arr[i+1]){
-                max = arr[i+1];
-            }else {
+        int max=arr[0];
+        for(int i=1;i< arr.length;i++){
+            if(arr[i]>max){
                 max = arr[i];
             }
         }
@@ -35,7 +29,7 @@ public class Min_Max {
             arr[i]= sc.nextInt();
         }
         int min = min(arr);
-        System.out.println("Maximum Element IS :"+min);
+        System.out.println("Minimum Element IS :"+min);
         int max = max(arr);
         System.out.println("Maximum Element IS :"+max);
     }
