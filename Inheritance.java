@@ -6,6 +6,7 @@ public class Inheritance {
             t.eat();
             t.display();
             t.name();
+            System.out.println();
         }
 
 }

@@ -11,7 +11,7 @@ public class Prac_15 {
         this.cgpa = cgpa;
     }
 
-    public Prac_15() {
+    Prac_15() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Roll No Of Student : ");
         roll  = sc.nextInt();
