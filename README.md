@@ -233,12 +233,66 @@ Difference Between String  and String Buffer Class :-
 		Instance of operators in java:-
 			This operator returns either true or false and hence is mejorly used in conditional statements.
 			It is used to check whether a given object belongs to a perticular class or not.
-
 		
+	ArrayList Class
+		- Java ArrayList class uses a dynamic array for storing the methods.
+		- It is like an array, but there is no size limit.
+		- we can add or remove element anytime.SO,it is much more flexible than the traditional array.
+		- it is found in java.util package.
+		- The ArrayList in java can have the duplicate element also.
+	
+	* Important points about the java ArrayList Class are:-
+		- Java Array List class can contain duplicate elements.
+		- Java Array List class maintains insertion order.
+		- Java Array List class is non synchronized.
+		- Java Array List allows random access because the array works on an index basis.
+		- In ArrayList,  Manuplication in a little bit slower then the LinkList in java because shifting needs to occur if any element in=s removed from the array list.
+		- we can not create an array list of primitive types , such as int ,float,char etc.It is required to use the required wrapper class in such cases.
+			- Ex :-
+					- 1. ArrayList<int>a1 = ArrayList<int>();  \\does not work.
+					- 2.  ArrayList<Integer>a1 = new ArrayList<Integer>();  \\works fine.
+  
+
+---
+															 Inheritance
+
+---		
+	**Inheritance in java is a mechanism in which one object acquires all the properties and behaviors of a parent object . It is an important part of oops.**
+	
+	when you inherite from an existing class , you reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+	
+	Inheritance represents the Is-A Relationship in which is also know as a parent-child relationship.
+	
+	Sub Class/Child Class :-
+		Subclass is a class which inherits the other class. It is also called a derived class,extended class , or  a Child class.
+		
+		Syntax :-
+			class subclass_Name extends superclass_name
+			
+	Super class/Parent Class :-
+		Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.
+
+		Parent class has same syntax as class syntax.
+
+		**A SINGLE CHILD CLASS CAN NOT HAVE MULTIPLE PARENT CLASS BUT A SINGLE PARENT CLASS CAN HAVE MULTIPLE CHILD CLASS WHICH KNOWN AS HIRARCHICAL ING=HERITANCE.**
+		
+		PUBLIC ;-
+			It will access in all levels.
+		
+		Private :-
+			Only the same class members can access it.
+		
+		Protacted :-
+			Only 1 level can access it.
+			
+	Inside the static methods super keyword can not used.
+
 ---
 															Exception
 
 ---
+
+
 
 Exception:-
 
@@ -395,5 +449,17 @@ Example :-
 			
 			
 		Interface In java:-
+			It IS collection Fully abstract classes and methods.
+			Used To implement multiple hirarchical inheritance.
+			we can not create an object of Interfacce.
+
+		Abstract Class :-
+			The method Is Only Declared Not Defined.
+			we can not create an object of abstract class.
 			
-			
+		Upcasting :-
+			Parent class reference and child class object.
+		
+		Use of upcasting :-
+			upcasting is useful when youb want to write genric code that can handle diffierent types of objects without having to write sepratr code for eacch type.
+			It also usefull when you want...
